@@ -100,4 +100,4 @@ Suivez ces étapes dans ce dépôt pour pratiquer Git Flow. Les commandes suppos
 - Simulez un hotfix à partir de master et fusionnez la correction dans develop.
 - Rédigez de courtes notes dans ce README décrivant ce que vous avez fait pour chaque étape.
 
-Bon apprentissage !
+Bon apprentissage !\n\nIf the Mermaid diagram above doesn't render on GitHub, view this SVG fallback:\n\n![Git Flow diagram](assets/gitflow-diagram.svg)\n
