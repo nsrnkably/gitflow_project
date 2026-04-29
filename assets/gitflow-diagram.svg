@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <style>
+    .branch { stroke-width: 6; fill: none; stroke-linecap: round; }
+    .dot { stroke: #000; stroke-width: 1; fill: #fff; }
+    .label { font: 14px sans-serif; fill: #222; }
+    .small { font: 12px sans-serif; fill: #444; }
+  </style>
+  <!-- Branch lines -->
+  <line x1="40" y1="50" x2="860" y2="50" class="branch" stroke="#333" />
+  <line x1="40" y1="110" x2="700" y2="110" class="branch" stroke="#2b8cbe" />
+  <line x1="240" y1="170" x2="420" y2="170" class="branch" stroke="#ff7f0e" />
+  <line x1="560" y1="170" x2="760" y2="170" class="branch" stroke="#e41a1c" />
+
+  <!-- Commits on master -->
+  <circle cx="80" cy="50" r="6" class="dot" />
+  <text x="95" y="55" class="small">init</text>
+  <circle cx="620" cy="50" r="6" class="dot" />
+  <text x="635" y="55" class="small">v1.0.0</text>
+  <circle cx="780" cy="50" r="6" class="dot" />
+  <text x="795" y="55" class="small">v1.0.1</text>
+
+  <!-- Commits on develop -->
+  <circle cx="180" cy="110" r="6" class="dot" />
+  <text x="195" y="115" class="small">start dev</text>
+  <circle cx="400" cy="110" r="6" class="dot" />
+  <text x="415" y="115" class="small">merge feature</text>
+
+  <!-- Feature branch -->
+  <circle cx="300" cy="170" r="6" class="dot" />
+  <text x="315" y="175" class="small">feature work</text>
+
+  <!-- Release branch -->
+  <circle cx="540" cy="170" r="6" class="dot" />
+  <text x="555" y="175" class="small">release prep</text>
+
+  <!-- Labels -->
+  <text x="10" y="50" class="label">master</text>
+  <text x="10" y="110" class="label">develop</text>
+  <text x="10" y="170" class="label">feature/release/hotfix</text>
+
+  <!-- Arrows/merges -->
+  <path d="M350 170 C380 150 410 130 420 110" stroke="#888" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#888" />
+    </marker>
+  </defs>
+
+  <!-- Legend -->
+  <rect x="620" y="140" width="260" height="100" rx="6" fill="#f7f7f7" stroke="#e0e0e0" />
+  <text x="635" y="160" class="small">Legend:</text>
+  <text x="635" y="180" class="small">• master: production (tags)</text>
+  <text x="635" y="200" class="small">• develop: integration branch</text>
+  <text x="635" y="220" class="small">• feature/release/hotfix: short-lived branches</text>
+</svg>
