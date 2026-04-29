@@ -1,6 +1,7 @@
 # gitflow_project
 
 ## Aperçu
+
 Ce dépôt sert à enseigner Git Flow. Le diagramme ci-dessous (Mermaid gitGraph) visualise les branches principales utilisées dans Git Flow et les transitions typiques entre elles.
 
 `mermaid
@@ -24,9 +25,11 @@ gitGraph
 `
 
 ## Qu'est-ce que Git Flow ?
+
 Git Flow est un modèle de branches qui définit une stratégie de branching stricte : une branche longue durée 'master' (ou 'main') pour la production, une branche 'develop' pour le développement continu, et des branches éphémères 'feature/*', 'release/*' et 'hotfix/*' pour le travail spécifique.
 
 ## Exercice pour débutant : Mettre en œuvre Git Flow (pas à pas)
+
 Suivez ces étapes dans ce dépôt pour pratiquer Git Flow. Les commandes supposent que le remote s'appelle 'origin' et que la branche par défaut est 'master'. Remplacez les noms si nécessaire.
 
 1. Cloner le dépôt :
@@ -91,6 +94,7 @@ Suivez ces étapes dans ce dépôt pour pratiquer Git Flow. Les commandes suppos
    git push origin develop
 
 ## Tâches pour l'étudiant
+
 - Créez une branche feature, implémentez une petite fonctionnalité, ouvrez une PR vers develop, puis fusionnez.
 - Créez une branche release, augmentez la version, et réalisez la fusion vers master avec un tag.
 - Simulez un hotfix à partir de master et fusionnez la correction dans develop.
